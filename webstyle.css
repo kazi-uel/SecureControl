@@ -1,0 +1,846 @@
+/* =========================================
+   COMMON STYLES
+========================================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav.top-menu {
+    background-color: rgb(104, 169, 228);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+nav.top-menu a.logo-link {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+nav.top-menu .logo {
+    height: 45px;
+    width: auto;
+}
+
+nav.top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav.top-menu a {
+    display: block;
+    padding: 14px 20px;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+nav.top-menu a:hover {
+    background-color: rgb(80, 140, 200);
+    color: white;
+}
+
+.heading {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.main {
+    width: 100%;
+}
+
+.main img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    background-color: rgb(242, 242, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 14px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(104, 169, 228);
+    justify-content: center;
+}
+
+.footer-links a {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:not(:last-child)::after {
+    content: " | ";
+    margin: 0 4px;
+}
+
+.footer-links a:hover {
+    color: rgb(104, 169, 228);
+}
+
+.footer-copyright {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.blue-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: rgb(104, 169, 228);
+    color: white;
+    border: 1px solid rgb(80, 140, 200);
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.blue-btn:hover {
+    background-color: rgb(80, 140, 200);
+}
+
+.white-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(104, 169, 228);
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.white-btn:hover {
+    background-color: rgb(240, 248, 255);
+}
+
+.gallerycontainer {
+    width: 90%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(149, 99, 99, 0.4);
+    transition: box-shadow 0.6s ease-in-out, transform 0.6s ease-in-out;
+    width: 30%;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    background-color: rgb(223, 244, 241);
+    border: 1px solid rgb(170, 210, 205);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.container {
+    padding: 12px 16px;
+}
+
+.container a {
+    color: rgb(0, 0, 0);
+}
+
+/* =========================================
+   DEDICATED HOME PAGE
+========================================= */
+.homeBrandRow {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.homeBrandText {
+    width: 60%;
+    font-size: 22px;
+}
+
+.homeButtons {
+    width: 35%;
+    text-align: right;
+}
+
+.homeButtons a {
+    margin-left: 10px;
+}
+
+.homeBottomRow {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.homeIntroBox {
+    width: 68%;
+    background-color: rgb(243, 233, 191);
+    padding: 40px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid rgb(220, 210, 150);
+    border-radius: 20px;
+}
+
+.homeSideImageBox {
+    width: 28%;
+    background-color: rgb(217, 236, 248);
+    border: 1px solid rgb(180, 205, 225);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.homeSideImageBox img {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    object-fit: cover;
+}
+
+/* =========================================
+   DEDICATED REGISTER PAGE
+========================================= */
+.registerRow {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registerRow .register-logo-image {
+    width: 38%;
+    height: auto;
+    object-fit: contain;
+}
+
+.registerForm {
+    width: 58%;
+    background-color: rgb(245, 241, 232);
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(220, 210, 190);
+    border-radius: 20px;
+}
+
+.registerForm label {
+    font-weight: bold;
+}
+
+.registerForm input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 6px;
+}
+
+.registerForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 6px;
+    height: 120px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+}
+
+.registerForm input[type="button"] {
+    width: auto;
+    background-color: rgb(104, 169, 228);
+    color: white;
+    border: 1px solid rgb(80, 140, 200);
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.registerForm input[type="button"]:hover {
+    background-color: rgb(80, 140, 200);
+}
+
+/* =========================================
+   DEDICATED ABOUT PAGE
+========================================= */
+.aboutMissionRow {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.aboutMission {
+    width: 58%;
+    background-color: rgb(243, 233, 191);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.aboutImageBox {
+    width: 38%;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.aboutImageBox img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.aboutBottomRow {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.aboutImportance {
+    width: 38%;
+    background-color: rgb(223, 244, 241);
+    border: 1px solid rgb(170, 210, 205);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   DEDICATED SMART HEALTHCARE PAGE
+========================================= */
+.smartDef {
+    width: 90%;
+    margin: 30px auto;
+    background-color: rgb(235, 222, 148);
+    border-left: 6px solid rgb(245, 175, 101);
+    border-radius: 12px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.smartDef blockquote {
+    margin: 0;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.smartRow {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.smartDiagramBox {
+    width: 48%;
+    border: 2px solid rgb(104, 169, 228);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.smartExplain {
+    width: 48%;
+    background-color: whitesmoke;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.smartTableBox {
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgb(255, 217, 119);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.smartTableBox table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.smartTableBox th,
+.smartTableBox td {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 12px;
+    text-align: left;
+}
+
+.smartTableBox th {
+    background-color: rgb(217, 236, 248);
+}
+
+/* =========================================
+   DEDICATED APPLICATIONS PAGE
+========================================= */
+.appsTopRow {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.appsImageBox {
+    width: 38%;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.appsImageBox img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.appsTextBox {
+    width: 58%;
+    background-color: rgb(255, 223, 144);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.appsListBox {
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.appsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.appsList li {
+    margin-bottom: 12px;
+}
+
+.appButton {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    background-color: rgb(223, 244, 241);
+    border: 1px solid rgb(170, 210, 205);
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.appButton:hover {
+    background-color: rgb(210, 238, 235);
+}
+
+.nestedList {
+    display: none;
+    margin-top: 8px;
+    margin-left: 25px;
+    padding: 15px;
+    background-color: rgb(245, 241, 232);
+    border-radius: 12px;
+    border: 1px solid rgb(220, 210, 190);
+}
+
+.nestedList ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.relatedSites {
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgb(245, 241, 232);
+    border: 1px solid rgb(220, 210, 190);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   SECURITY PAGE
+========================================= */
+.securityIntro {
+    width: 90%;
+    margin: 30px auto;
+    background-color: rgb(248, 255, 110);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.securityTopRow {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.securityConcerns {
+    width: 58%;
+    background-color: rgb(255, 186, 186);
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.securityConcerns ul {
+    padding-left: 20px;
+}
+
+.securityImageBox {
+    width: 38%;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.securityImageBox img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.securityBottomRow {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.securityPreventionImage {
+    width: 38%;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.securityPreventionImage img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.securityPrevention {
+    width: 58%;
+    background-color: rgb(173, 255, 173);
+    border: 1px solid rgb(220, 210, 190);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.securityPrevention ul {
+    padding-left: 20px;
+}
+
+.faqSection {
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.faqBox {
+    margin-bottom: 12px;
+}
+
+.faqQuestion {
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    background-color: rgb(223, 244, 241);
+    border: 1px solid rgb(170, 210, 205);
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.faqQuestion:hover {
+    background-color: rgb(210, 238, 235);
+}
+
+.faqAnswer {
+    display: none;
+    margin-top: 8px;
+    padding: 15px;
+    background-color: rgb(245, 241, 232);
+    border: 1px solid rgb(220, 210, 190);
+    border-radius: 12px;
+}
+
+/* =========================================
+   DEDICATED CONTACT PAGE
+========================================= */
+.contactGrid {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.contactLeft {
+    width: 58%;
+}
+
+.contactIntro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactIntro h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.contactIntro p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.centerContent {
+    background-color: rgb(245, 241, 232);
+    border: 1px solid rgb(220, 210, 190);
+    border-radius: 50px;
+    padding: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(149, 99, 99, 0.4);
+    min-height: 500px;
+}
+
+.centerContent label {
+    font-weight: bold;
+}
+
+.centerContent input[type="text"],
+.centerContent input[type="email"],
+.centerContent textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 6px;
+    background-color: white;
+}
+
+.centerContent textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.centerContent input[type="submit"] {
+    background-color: rgb(104, 169, 228);
+    color: white;
+    border: 1px solid rgb(80, 140, 200);
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.centerContent input[type="submit"]:hover {
+    background-color: rgb(80, 140, 200);
+}
+
+.contactMessage {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.fieldError {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    min-height: 16px;
+}
+
+.contactSocial {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactSocial div {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.contactRight {
+    width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* =========================================
+   SIMPLE RESPONSIVE DESIGN
+========================================= */
+@media screen and (max-width: 900px) {
+    .homeBrandRow,
+    .homeBottomRow,
+    .registerRow,
+    .aboutMissionRow,
+    .aboutBottomRow,
+    .smartRow,
+    .appsTopRow,
+    .securityTopRow,
+    .securityBottomRow,
+    .contactGrid {
+        flex-direction: column;
+    }
+
+    .homeBrandText,
+    .homeButtons,
+    .homeIntroBox,
+    .homeSideImageBox,
+    .registerForm,
+    .aboutMission,
+    .aboutImageBox,
+    .aboutImportance,
+    .smartExplain,
+    .appsImageBox,
+    .appsTextBox,
+    .securityConcerns,
+    .securityImageBox,
+    .securityPreventionImage,
+    .securityPrevention,
+    .contactLeft,
+    .contactRight {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .homeButtons {
+        text-align: left;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+
+    .main img {
+        height: 250px;
+    }
+
+    .contactSocial {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureControl | Security</title>
+<link rel="stylesheet" href="webstyle.css">
+
+<script>
+function toggleFaq(id)
+{
+    var x = document.getElementById(id);
+
+    if (x.style.display == "block")
+    {
+        x.style.display = "none";
+    }
+    else
+    {
+        x.style.display = "block";
+    }
+}
+</script>
+</head>
+<body>
+
+<nav class="top-menu">
+    <a href="home.html" class="logo-link"><img class="logo" src="images/logo.png" alt="Nav Logo"></a>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="about_securecontrol.html">About SecureControl</a></li>
+        <li><a href="smart_healthcare.html">Smart Healthcare</a></li>
+        <li><a href="applications.html">Applications</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<div class="heading">
+    <h2>Security</h2>
+</div>
+
+<div class="securityIntro">
+    <h3>Security Aspects of IoT</h3>
+    <p>
+        While IoT devices bring many benefits to the health sector, they also bring in a lot of security issues such as
+        data breaches, hacking and malfunctions in the devices. These can lead to privacy breaches, potential harm to the clients
+        and hesitancy in using such healthcare devices.
+    </p>
+    <p>
+        This is a crucial aspect as healthcare databases are sensitive and any misuse or failure can lead to loss of quality in
+        patient care.
+    </p>
+</div>
+
+<div class="securityTopRow">
+    <div class="securityConcerns">
+        <h3>Potential Issues</h3>
+        <p>The main security concerns with IoT devices in healthcare include:</p>
+        <ul>
+            <li>Weak patient authentication</li>
+            <li>Risk of data breaches</li>
+            <li>Device malfunctioning</li>
+            <li>Outdated software</li>
+            <li>Loss of proper communication</li>
+            <li>Halt of website due to cyberattacks</li>
+        </ul>
+        <p>These issues can compromise patient safety and the integrity of healthcare data.</p>
+    </div>
+
+    <div class="securityImageBox">
+        <img src="images/security_risk.png" alt="Risk related image">
+    </div>
+</div>
+
+<div class="securityBottomRow">
+    <div class="securityPreventionImage">
+        <img src="images/security_prevention.png" alt="Prevention related image">
+    </div>
+
+    <div class="securityPrevention">
+        <h3>Preventive Measures</h3>
+        <p>Healthcare organizations can reduce risk by:</p>
+        <ul>
+            <li>Using strong passwords and authentication</li>
+            <li>Frequently updating software</li>
+            <li>Encrypting sensitive data</li>
+            <li>Monitoring device behaviour</li>
+            <li>Training staff to use systems safely</li>
+        </ul>
+        <p>
+            These actions help protect patient information, improve device reliability,
+            and create safer digital healthcare systems.
+        </p>
+    </div>
+</div>
+
+<div class="faqSection">
+    <h3>Frequently Asked Questions</h3>
+
+    <div class="faqBox">
+        <button type="button" class="faqQuestion" onclick="toggleFaq('faq1')">What is the biggest concern?</button>
+        <div class="faqAnswer" id="faq1">
+            Unauthorized access to healthcare devices and sensitive patient data is one of the biggest risks.
+        </div>
+    </div>
+
+    <div class="faqBox">
+        <button type="button" class="faqQuestion" onclick="toggleFaq('faq2')">Why are frequently updating software important?</button>
+        <div class="faqAnswer" id="faq2">
+            Updates can fix device weaknesses and reduce the chance of attacks.
+        </div>
+    </div>
+
+    <div class="faqBox">
+        <button type="button" class="faqQuestion" onclick="toggleFaq('faq3')">Can IoT become more secure in healthcare?</button>
+        <div class="faqAnswer" id="faq3">
+            Yes. With stronger settings, updates, encryption, and staff awareness, IoT can be safer.
+        </div>
+    </div>
+
+    <div class="faqBox">
+        <button type="button" class="faqQuestion" onclick="toggleFaq('faq4')">Why staff training matter?</button>
+        <div class="faqAnswer" id="faq4">
+            Human error can create security problems, so training helps staff use systems correctly.
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="about_securecontrol.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-copyright">
+        &copy; 2026 SecureControl. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
