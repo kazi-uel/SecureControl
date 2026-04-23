@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureControl | Register</title>
+<link rel="stylesheet" href="webstyle.css">
+
+<script>
+function validationCheck(form)
+{
+    if (form.txtEmail.value == "")
+    {
+        alert("Please enter the Email Address!");
+    }
+    else if (form.txtEmail.value.indexOf('@') == -1)
+    {
+        alert("The Email Address is not valid!");
+    }
+    else if (form.txtPassword.value == "")
+    {
+        alert("Please enter the Password!");
+    }
+    else if (form.txtPassword.value.length < 4)
+    {
+        alert("Password must be at least 4 characters!");
+    }
+    else if (form.txtConfirmPassword.value == "")
+    {
+        alert("Please enter the Confirm Password!");
+    }
+    else if (form.txtPassword.value != form.txtConfirmPassword.value)
+    {
+        alert("Passwords do not match!");
+    }
+    else if (form.txtPhone.value == "")
+    {
+        alert("Please enter the Phone Number!");
+    }
+    else if (form.txtPhone.value.length < 10)
+    {
+        alert("Phone number must be at least 10 digits!");
+    }
+    else if (form.txtGender.value == "")
+    {
+        alert("Please select your gender!");
+    }
+    else
+    {
+        alert("Registration successful!");
+        window.location.href = "smart_healthcare.html";
+    }
+}
+</script>
+</head>
+<body>
+
+<nav class="top-menu">
+    <a href="index.html" class="logo-link"><img class="logo" src="images/logo.png" alt="NavLogo"></a>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="about_securecontrol.html">About SecureControl</a></li>
+        <li><a href="smart_healthcare.html">Smart Healthcare</a></li>
+        <li><a href="applications.html">Applications</a></li>
+        <li><a href="security.html">Security</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<div class="heading">
+    <h2>Register</h2>
+</div>
+
+<div class="registerRow">
+    <img src="images/logo.png" alt="SecureControl Logo" class="register-logo-image">
+
+    <div class="registerForm">
+        <h3>Registration Form</h3>
+
+        <form>
+            Email Address<br>
+            <input type="text" name="txtEmail" placeholder="Enter your email address"><br>
+
+            Password<br>
+            <input type="password" name="txtPassword" placeholder="Enter your password"><br>
+
+            Confirm Password<br>
+            <input type="password" name="txtConfirmPassword" placeholder="Confirm your password"><br>
+
+            Phone Number<br>
+            <input type="text" name="txtPhone" placeholder="Enter your phone number"><br>
+
+            Gender<br>
+            <select name="txtGender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <input type="button" name="btnRegister" value="Register" onClick="validationCheck(this.form)">
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about_securecontrol.html">About</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="footer-copyright">
+        &copy; 2026 SecureControl. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
